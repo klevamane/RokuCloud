@@ -113,8 +113,27 @@ img {
 }
 
 .showcase .grid {
+    /* Add overflow here in order to remove the scroll */
+    /* bar from the form */
+    /* then set overflow to visibile to implement the z-index is effect */
+    overflow: visible;
     grid-template-columns: 55% 45%;
     gap: 30px;
+}
+
+.showcase-form {
+    /* here we are making the position to be relative */
+    /* because we want to add a top property */
+    /* if we want to use top, bottom, right or left, */
+    /* we need to position it abs or rel */
+    /* we are making use of the rel here */
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
 }
 
 .grid {
@@ -129,4 +148,13 @@ img {
 
     justify-content: center;
     align-content: center;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
 }
