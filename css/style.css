@@ -193,3 +193,32 @@ img {
 .cloud .grid {
     grid-template-columns: 4fr 3fr;
 }
+
+/* LANGUAGES */
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+   
+    transition: transform 0.2s ease-in;
+}
+
+/* This ensures that the card goes to the  */
+/* next line, when the browser is resized */
+.languages .flex {
+    flex-wrap:wrap;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    /* in order for this to work, you would have to  */
+    /* add a transition: transform effect on the languages card */
+    /* transition: transform 0.2s ease-in; */
+    transform: translateY(-15px);
+    
+    cursor: pointer;
+}
